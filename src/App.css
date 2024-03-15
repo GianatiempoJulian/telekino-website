@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  width: 100vw;
+  height: 100vh;
+}
+
+body
+{
+  background: #222;
+  margin: 0;
+}
+
+/*! Last Result */
+
+.lastResult-card{
+  background-color: cornflowerblue;
+}
+
+.lastResult-number{
+  background-color: #ffe82e;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lastResult-number span{
+  font-weight: 700;
+  font-size: 30px;
+}
+
+/*! Next Lottery */
+
+.nextLottery-card{
+  background-color: tan;
+}
+
+/*! Check Result */
+
+.checkResult-card{
+  background-color: sienna;
+}
+
+/*! Another Results */
+
+.anotherResults-card{
+  background-color: turquoise;
+}
+
+/*! Video Card */
+
+.video-card-header div img{
+  width: 350px;
+  height: 300px;
+}
+
+/*! Video List */
+.videoList{
+  display: flex;
+  flex-direction: row;
+  /* para CELU :column */
+  background-color: mediumblue;
+  gap: 10px;
+}
