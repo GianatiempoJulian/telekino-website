@@ -1,6 +1,6 @@
-export function LastResultNumber ({ children }){
+export function LastResultNumber ({ children, style }){
     return(
-        <article className='lastResult-number rounded-md'>
+        <article className={style} >
             <span>{ children }</span>
         </article>
     )

@@ -25,7 +25,7 @@ function App() {
           >
           </LastResultCard>
       </div>
-      <div className='h-screen grid'>
+      <div className='h-screen grid content-evenly grid-rows-3'>
         <NextLotteryCard
             date='11/03/2024'
             lotteryNumber='2331'

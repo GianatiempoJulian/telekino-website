@@ -21,16 +21,25 @@ body
 
 .lastResult-number{
   background-color: #ffe82e;
-  width: 50px;
-  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 
 .lastResult-number span{
   font-weight: 700;
   font-size: 30px;
+}
+
+.telekino{
+  height: 60px;
+  width: 60px;
+}
+
+.rekino{
+  width: 40px;
+  height: 40px;
 }
 
 /*! Next Lottery */
