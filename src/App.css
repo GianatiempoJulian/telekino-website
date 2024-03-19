@@ -50,8 +50,8 @@ body
 
 /*! Check Result */
 
-.checkResult-card{
-  background-color: sienna;
+.checkResult-card-header{
+  grid-template-rows: 15% 55% 30%;
 }
 
 /*! Another Results */
