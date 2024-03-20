@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { LastResultCard } from './components/LastResultCard'
 import { NextLotteryCard } from './components/NextLotteryCard'
 import { CheckResultCard } from './components/CheckResultCard'
-import { AnotherResultsCard } from './components/AnotherResultsCard'
 import { VideoList } from './components/VideoList'
 import './App.css'
 
@@ -10,14 +9,14 @@ import './App.css'
 function App() {
 
   const prize = {
-    money: '120.000',
+    money: '120',
     car: 'AUTO 0KM',
     house: 'CASA ESTILO AMERICANA'
   }
 
   return (
     <>
-     <article className="grid grid-cols-3 gap-5">
+     <article className="grid grid-cols-2 gap-5">
       <div className='h-screen'>
         <LastResultCard 
             date='04/03/2024'
@@ -33,10 +32,7 @@ function App() {
             prize = {prize}
           ></NextLotteryCard>
            <CheckResultCard></CheckResultCard>
-           <AnotherResultsCard></AnotherResultsCard>
-      </div>
-      <div className='h-screen grid'>
-        <VideoList></VideoList>
+          <VideoList></VideoList>
       </div>
      </article>
     </>

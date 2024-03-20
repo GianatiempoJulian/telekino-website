@@ -1,30 +1,19 @@
+import { LotteryAndDate } from "./LotteryAndDate"
+
 export function NextLotteryCard ({date, lotteryNumber, price, prize}){
     return(
         <article className='nextLottery-card'>
-            <header className='nextLottery-card-header bg-rose-800'>
-                <div className="nextLottery-card-info">
-                    <strong>Proximo Sorteo!</strong>
-                    <div>
-                        <span>Sorteo N°: </span>
-                        <span>{ lotteryNumber }</span>
-                    </div>
-                    <div>
-                        <span>Fecha: </span>
-                        <span>{ date }</span>
-                    </div>
-                    <div className="bg-neutral-100">
-                        <span className="text-green-600">Valor del cartón: </span>
-                        <span className="font-bold">${ price }</span>
-                    </div>
-                </div>
+            <header className='nextLottery-card-header bg-amber-300 w-full h-full flex flex-col justify-center'>
+               <LotteryAndDate
+                title ='Proximo Sorteo'
+                lotteryNumber = {lotteryNumber}
+                date = {date}
+               ></LotteryAndDate>
                 <div className="nextLottery-prize">
-                    <div className="nextLottery-prize-card">
-                        <span className="bg-green-500 text-white">Pozo estimado a los 15 aciertos</span>
-                        <div className="bg-neutral-100">
-                            <h1 className="font-bold text-5xl">${ prize.money }</h1>
-                            <h3>+ { prize.car } </h3>
-                            <h3>+ { prize.house }</h3>
-                        </div>
+                    <div className="nextLottery-prize-card flex flex-col items-center">
+                        <h1 className="font-bold text-7xl inline mb-2">${ prize.money } MILLONES</h1>
+                        <h3>+ { prize.car } + {prize.house}</h3>
+                        <h5 className="text-sm mt-2">Valor del carton <span className="font-bold">$500</span></h5>
                     </div>
                 </div>
             </header>

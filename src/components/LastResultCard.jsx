@@ -1,22 +1,17 @@
 import { LastResultNumber } from "./LastResultNumber"
+import { LotteryAndDate } from "./LotteryAndDate"
 import { Button } from "./Button"
 
 export function LastResultCard ({date, lotteryNumber}){
     return(
-        <article className='lastResult-card h-full grid justify-center content-center'>
-            <header className='lastResult-card-header'>
-                <div className="lastResult-card-info h-32 flex flex-col justify-center items-center mb-8">
-                    <strong className="bg-amber-600 text-blue-800 rounded-md p-2 w-22">Ultimo Resultado</strong>
-                    <div className="grid">
-                        <span className="text-slate-50 font-bold">Sorteo N°: </span>
-                        <span className="bg-amber-300 rounded-md">{ lotteryNumber }</span>
-                    </div>
-                    <div className="grid">
-                        <span className="text-slate-50 font-bold">Fecha: </span>
-                        <span className="bg-amber-300 rounded-md">{ date }</span>
-                    </div>
-                </div>
-                <div className="lastResult-card-numbers">
+        <article className='lastResult-card h-full grid justify-center  bg-blue-500'>
+            <header className='lastResult-card-header content-center'>
+            <LotteryAndDate
+                title ='Ultimo Sorteo'
+                lotteryNumber = {lotteryNumber}
+                date = {date}
+               ></LotteryAndDate>
+                <div className="lastResult-card-numbers mt-6">
                     <div className="grid grid-cols-5 grid-rows-3 lastResult-telekino-numbers gap-y-5 gap-x-2">
                         <LastResultNumber
                         style='lastResult-number telekino'>
@@ -144,8 +139,9 @@ export function LastResultCard ({date, lotteryNumber}){
                     </div>
                 </div>
             </header>
-            <aside className="flex justify-center mt-5">
+            <aside className="grid grid-cols-2 mt-5 justify-items-center gap-5">
                 <Button>Imprimir</Button>
+                <Button>Otros resultados</Button>
             </aside>
         </article>
     )

@@ -2,8 +2,8 @@
 
 export function Button ({ children }){
     return(
-        <button className="bg-amber-600 w-3/6 h-16 rounded-md text-blue-800
-        font-bold hover:bg-amber-700 hover:text-amber-800 focus:ring focus:ring-white-300 transition delay-100" >
+        <button className="bg-green-600 w-3/6 h-14 rounded-md text-green-900
+        font-bold hover:bg-green-900 hover:text-green-950 focus:ring focus:ring-white-300 transition delay-100 w-full" >
            {children}</button>
     )
 }

@@ -15,9 +15,6 @@ body
 
 /*! Last Result */
 
-.lastResult-card{
-  background-color: cornflowerblue;
-}
 
 .lastResult-number{
   background-color: #ffe82e;
@@ -44,34 +41,12 @@ body
 
 /*! Next Lottery */
 
-.nextLottery-card{
-  background-color: tan;
+.lottery-date{
+  grid-template-columns: 60% 30%;
 }
 
 /*! Check Result */
 
 .checkResult-card-header{
-  grid-template-rows: 15% 55% 30%;
-}
-
-/*! Another Results */
-
-.anotherResults-card{
-  background-color: turquoise;
-}
-
-/*! Video Card */
-
-.video-card-header div img{
-  width: 350px;
-  height: 300px;
-}
-
-/*! Video List */
-.videoList{
-  display: flex;
-  flex-direction: row;
-  /* para CELU :column */
-  background-color: mediumblue;
-  gap: 10px;
+  grid-template-rows: 15% 55% 20% 5%; 
 }
